@@ -1,0 +1,15 @@
+@import './variables';
+
+.header {
+    @include flexCenter();
+    background-color: $backColor;
+    color: $textColor;
+    height: 100vh;
+  }
+      button{
+          background-color: $primaryBtn;
+      }
+          button:hover{
+              background-color: red;
+              cursor: pointer;
+          }
