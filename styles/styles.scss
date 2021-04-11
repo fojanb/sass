@@ -1,28 +1,32 @@
-// Sass => Variables , Nesting
+// Sass => Variables , Nesting , Separation
 // ------------------------------
-$primaryBtn: rgb(169, 14, 207);
-$backColor : rgb(113, 221, 221);
-$textColor : rgb(24, 11, 204);
+// $primaryBtn: rgb(169, 14, 207);
+// $backColor : rgb(113, 221, 221);
+// $textColor : rgb(24, 11, 204);
+@import './header';
+@import './variables';
 // ------------------------------
 // We can do nesting in Sass as well.
-.header {
-  background-color: $backColor;
-  display: flex;
-  justify-content: center;
-  color: $textColor;
-}
-    button{
-        background-color: $primaryBtn;
-    }
-        button:hover{
-            background-color: red;
-        }
+// .header {
+//   background-color: $backColor;
+//   display: flex;
+//   justify-content: center;
+//   color: $textColor;
+// }
+//     button{
+//         background-color: $primaryBtn;
+//     }
+//         button:hover{
+//             background-color: red;
+//         }
         
     // === .header > button{----}
 // .header > button {
 //   background-color: $primaryBtn;
 // }
-.main > button {
-  background-color: $primaryBtn;
+
+.main {
+  @include flexCenter();
+  background-color: yellow;
 
 }
