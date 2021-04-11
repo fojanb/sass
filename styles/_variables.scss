@@ -1,0 +1,8 @@
+$primaryBtn: rgb(169, 14, 207);
+$backColor : rgb(113, 221, 221);
+$textColor : rgb(24, 11, 204);
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
